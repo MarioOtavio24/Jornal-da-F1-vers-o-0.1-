@@ -1,0 +1,199 @@
+
+/* estruturando o css para padronizar a página  */
+
+
+
+.titulo-inicial{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.texto-noticia {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    max-width: 1000px;
+}
+
+.texto-noticia strong {
+    color: #c90000;
+    font-weight: bold;
+}
+
+
+/*   */
+
+.paragrafo-inicial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Área principal da Newsletter */
+.newsletter {
+    max-width: 560px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #101827;
+    color: #ffffff;
+    border-top: 5px solid #e10600;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+.newsletter-cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newsletter-etiqueta {
+    display: inline-block;
+    color: #ff4136;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.newsletter-cabecalho h1 {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.3;
+    margin: 8px 0 12px;
+}
+
+.newsletter-cabecalho p {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    text-align: center;
+}
+
+/* Campos do formulário */
+.campo-newsletter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo-newsletter label {
+    color: #f1f5f9;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo-newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    background-color: #ffffff;
+    color: #172033;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo-newsletter input::placeholder {
+    color: #7b8494;
+}
+
+.campo-newsletter input:focus {
+    border-color: #e10600;
+    box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.2);
+}
+
+/* Campos com erro */
+.campo-newsletter input.invalido {
+    border-color: #ff6b6b;
+}
+
+.erro-campo {
+    display: block;
+    min-height: 0;
+    margin-top: 6px;
+    color: #ff8585;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.erro-campo:empty {
+    display: none;
+}
+
+/* Botão de inscrição */
+.botao-assinar {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #e10600;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao-assinar:hover {
+    background-color: #b30500;
+    transform: translateY(-2px);
+}
+
+.botao-assinar:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+/* Mensagens de retorno */
+.mensagem-newsletter {
+    margin: 18px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.mensagem-newsletter.sucesso {
+    color: #86efac;
+}
+
+.mensagem-newsletter.falha {
+    color: #ff8585;
+}
+
+/* Aviso de privacidade */
+.privacidade-newsletter {
+    margin: 18px 0 0;
+    color: #aab5c5;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+    .newsletter {
+        margin: 25px 12px;
+        padding: 24px 18px;
+    }
+
+    .newsletter-cabecalho h1 {
+        font-size: 23px;
+    }
+
+    .campo-newsletter input {
+        font-size: 16px;
+    }
+}

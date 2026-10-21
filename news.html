@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/formula1logo.png" type="image/png">
+    <link rel="stylesheet" href="newsStyle.css">
+    <title>Notícias de Fórmula 1 | Jornal da F1</title>
+</head>
+<body>
+    <!-- Cabeçalho: identificação do site e navegação sobre Fórmula 1. -->
+    <header class="titulo-inicial">
+        
+        <h1>Notícias de Fórmula 1</h1>
+    </header>
+
+    <!-- Primeiro bloco de conteúdo: uma notícia em destaque. -->
+    <main>
+        <section id="noticias" aria-da-noticia="titulo-noticia">
+            <article>
+               
+                
+                <h2  id="titulo-noticia">Fórmula 1 se prepara para uma nova temporada</h2>
+                <div class="paragrafo-inicial">
+                <p>Confira as principais mudanças e novidades que movimentam a categoria.</p>
+                </div>
+                <img src="img/noticias/escritorio.webp" alt="" width="500" height="350">
+
+                <section id="temporada" aria-labelledby="titulo-temporada">
+                    <!-- Primeira noticia de F1 -->
+
+                    <h1>Notícias de hoje</h1>
+                    <h2> F1 -Antonelli admite: Seria "muito assustador" se Verstappen estivesse na disputa pelo título</h2>
+                    <p> Jovem da Mercedes pode selar título em Austin, mas reconhece alívio por vantagem de pontos diante da arrancada da Red Bull e do tetracampeão mundial</p>
+                    
+                    <img src="img/noticias/Kimi e Verstappen.webp" alt="" width="500" height="350">
+
+                        
+                        <p class="texto-noticia">
+
+                            Kimi Antonelli, piloto da Mercedes, terminou o
+                            <strong>Grande Prêmio de Singapura de 2026 na terceira posição</strong>,
+                            conquistando um pódio importante na disputa pelo Campeonato Mundial de Pilotos.
+
+                            <br><br>
+
+                            De acordo com a reportagem da Motorsport.com, o jovem italiano enfrentou
+                            uma corrida exigente no circuito de Marina Bay, incluindo dificuldades
+                            com os freios, que apresentaram problemas de desempenho durante a prova.
+
+                            <br><br>
+
+                            Mesmo diante desses obstáculos, Antonelli conseguiu manter-se competitivo
+                            e garantiu o terceiro lugar. O resultado ganhou ainda mais importância
+                            diante da disputa pelo título e dos pontos que poderiam ser conquistados
+                            nas etapas seguintes.
+
+                            <br><br>
+
+                            Após a corrida, o piloto demonstrou surpresa ao saber que poderia
+                            conquistar o título mundial já no <strong>Grande Prêmio dos Estados Unidos,
+                            em Austin</strong>. Apesar dessa possibilidade, Antonelli manteve os pés
+                            no chão e ressaltou a importância de se concentrar no desempenho da equipe
+                            e em fazer um bom fim de semana de corrida.
+
+                        </p>
+                        <br> <br>
+                        <!-- Colocando mais noticias dentro da página-->
+
+
+                        <img src="img/noticias/Rafa-Camara-1.webp" alt="" width="500" height="350">
+                        
+
+
+                        <p class="texto-noticia">
+
+                            A Haas confirmou Rafael Câmara como piloto titular da equipe para a temporada de 2027 da Fórmula 1. O brasileiro assinou um contrato de vários anos e fará sua estreia na categoria no início do próximo campeonato.
+
+                            <br><br>
+
+                            Aos 21 anos, Câmara integra a Academia de Pilotos da Ferrari desde 2021. Depois de conquistar o título da Fórmula 3 em 2025, ele disputa sua temporada de estreia na Fórmula 2 pela Invicta Racing e lidera o campeonato a duas etapas do fim.
+
+                            <br><br>
+
+                            Na Haas, Rafa ocupará a vaga de Esteban Ocon, que deixará a equipe ao fim de 2026. O brasileiro já teve contato com o time em agosto, quando pilotou o carro VF-25 em um teste em Portimão, em Portugal. Em 2027, ele será o segundo brasileiro no grid da Fórmula 1, ao lado de Gabriel Bortoleto.
+
+                        </p>
+
+                        
+                        <br> <br>
+
+
+
+                </section>
+            </article>
+        </section>
+    </main>
+
+    
+    <!-- Newsletter copiada do index.html. -->
+
+    
+<section class="newsletter" aria-labelledby="titulo-newsletter">
+
+    <div class="newsletter-cabecalho">
+        <span class="newsletter-etiqueta">JORNAL DA F1</span>
+
+        <h1 id="titulo-newsletter">Assine a nossa Newsletter</h1>
+
+        <p>
+            Fique por dentro das últimas notícias, resultados e novidades
+            do mundo da Fórmula 1.
+        </p>
+    </div>
+
+    <form id="form-newsletter" novalidate>
+
+        <div class="campo-newsletter">
+            <label for="nome">Nome completo</label>
+
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                autocomplete="name"
+                required
+            >
+
+            <small class="erro-campo" id="erro-nome"></small>
+        </div>
+
+        <div class="campo-newsletter">
+            <label for="telefone">Telefone brasileiro</label>
+
+            <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(11) 99999-9999"
+                autocomplete="tel"
+                inputmode="tel"
+                maxlength="15"
+                required
+            >
+
+            <small class="erro-campo" id="erro-telefone"></small>
+        </div>
+
+        <div class="campo-newsletter">
+            <label for="email">E-mail</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemplo@email.com"
+                autocomplete="email"
+                required
+            >
+
+            <small class="erro-campo" id="erro-email"></small>
+        </div>
+
+        <button type="submit" class="botao-assinar">
+            Assinar Jornal da F1
+        </button>
+
+        <p
+            id="mensagem-newsletter"
+            class="mensagem-newsletter"
+            role="status"
+            aria-live="polite"
+        ></p>
+
+        <p class="privacidade-newsletter">
+            Ao se inscrever, você concorda em receber novidades
+            do Jornal da F1.
+        </p>
+
+    </form>
+
+    <script>
+        
+        const formulario = document.getElementById("form-newsletter");
+
+        const campoNome = document.getElementById("nome");
+        const campoTelefone = document.getElementById("telefone");
+        const campoEmail = document.getElementById("email");
+
+        const erroNome = document.getElementById("erro-nome");
+        const erroTelefone = document.getElementById("erro-telefone");
+        const erroEmail = document.getElementById("erro-email");
+
+        const mensagem = document.getElementById("mensagem-newsletter");
+
+        // Exibe o erro e destaca o campo correspondente.
+        function mostrarErro(campo, elementoErro, texto) {
+            elementoErro.textContent = texto;
+            campo.classList.add("invalido");
+            campo.setAttribute("aria-invalid", "true");
+        }
+
+        // Limpa o erro de um campo.
+        function limparErro(campo, elementoErro) {
+            elementoErro.textContent = "";
+            campo.classList.remove("invalido");
+            campo.removeAttribute("aria-invalid");
+        }
+
+        // Validação básica do nome.
+        function validarNome(nome) {
+            return nome.trim().length >= 2;
+        }
+
+        // Validação do telefone brasileiro.
+        // Aceita telefone fixo com DDD ou celular com DDD.
+        // Exemplos: (11) 3456-7890 e (11) 99999-9999.
+        function validarTelefone(telefone) {
+            const numeros = telefone.replace(/\D/g, "");
+
+            const formatoBrasileiro =
+                /^[1-9]{2}(?:[2-5]\d{7}|9\d{8})$/;
+
+            return formatoBrasileiro.test(numeros);
+        }
+
+        // Validação básica do formato de e-mail.
+        function validarEmail(email) {
+            const formatoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+            return formatoEmail.test(email.trim());
+        }
+
+        // Formata o telefone enquanto o usuário digita.
+        campoTelefone.addEventListener("input", function () {
+            let numeros = this.value.replace(/\D/g, "").slice(0, 11);
+
+            if (numeros.length > 10) {
+                numeros = numeros.replace(
+                    /^(\d{2})(\d{5})(\d{0,4}).*/,
+                    function (_, ddd, parte1, parte2) {
+                        return "(" + ddd + ") " + parte1 +
+                            (parte2 ? "-" + parte2 : "");
+                    }
+                );
+            } else if (numeros.length > 6) {
+                numeros = numeros.replace(
+                    /^(\d{2})(\d{4})(\d{0,4}).*/,
+                    function (_, ddd, parte1, parte2) {
+                        return "(" + ddd + ") " + parte1 +
+                            (parte2 ? "-" + parte2 : "");
+                    }
+                );
+            } else if (numeros.length > 2) {
+                numeros = numeros.replace(
+                    /^(\d{2})(\d+)/,
+                    "($1) $2"
+                );
+            } else if (numeros.length > 0) {
+                numeros = "(" + numeros;
+            }
+
+            this.value = numeros;
+
+            limparErro(campoTelefone, erroTelefone);
+        });
+
+        // Limpa os erros quando o usuário corrige os campos.
+        campoNome.addEventListener("input", function () {
+            limparErro(campoNome, erroNome);
+        });
+
+        campoEmail.addEventListener("input", function () {
+            limparErro(campoEmail, erroEmail);
+        });
+
+        formulario.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+
+            // Limpa mensagens anteriores.
+            limparErro(campoNome, erroNome);
+            limparErro(campoTelefone, erroTelefone);
+            limparErro(campoEmail, erroEmail);
+
+            mensagem.textContent = "";
+            mensagem.className = "mensagem-newsletter";
+
+            let formularioValido = true;
+
+            // Verifica o nome.
+            if (!validarNome(campoNome.value)) {
+                mostrarErro(
+                    campoNome,
+                    erroNome,
+                    "Digite seu nome completo ou um nome válido."
+                );
+
+                formularioValido = false;
+            }
+
+            // Verifica o telefone brasileiro.
+            if (!validarTelefone(campoTelefone.value)) {
+                mostrarErro(
+                    campoTelefone,
+                    erroTelefone,
+                    "Número em formato incorreto. Use DDD e um telefone brasileiro válido, como (11) 99999-9999."
+                );
+
+                formularioValido = false;
+            }
+
+            // Verifica o e-mail.
+            if (!validarEmail(campoEmail.value)) {
+                mostrarErro(
+                    campoEmail,
+                    erroEmail,
+                    "E-mail em formato incorreto. Exemplo: nome@email.com."
+                );
+
+                formularioValido = false;
+            }
+
+            // Se houver algum erro, interrompe a inscrição.
+            if (!formularioValido) {
+                mensagem.textContent =
+                    "Verifique os campos destacados e tente novamente.";
+
+                mensagem.classList.add("falha");
+
+                const primeiroCampoInvalido =
+                    formulario.querySelector(".invalido");
+
+                if (primeiroCampoInvalido) {
+                    primeiroCampoInvalido.focus();
+                }
+
+                return;
+            }
+
+            // Todos os campos passaram pelas validações.
+            mensagem.textContent = "Inscrição realizada com sucesso! 🏎️🏁";
+            mensagem.classList.add("sucesso");
+
+            formulario.reset();
+        });
+
+
+    </script>
+
+</section>
+
+    <br><br>
+
+    <a href="index.html">Voltar para a página inicial</a>
+    <br> <br>
+    <a href="2page.html">História da Fórmula 1</a>
+
+    <!-- Footer copiado do index.html. -->
+    <footer>
+        <h3>© 2026 Jornal da F1 - Todos os direitos reservados.</h3>
+    </footer>
+</body>
+</html>
